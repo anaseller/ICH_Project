@@ -13,7 +13,7 @@
 integer_part = int(input('Введите натуральное десятичное число: '))
 y = ''
 
-while integer_part != 0:
+while integer_part > 0:
     if integer_part % 2 == 0:
         y = '0' + y
     else:
