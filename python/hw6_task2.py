@@ -12,7 +12,8 @@ count = 2
 a = 0
 b = 1
 
-print(a, b, end=', ')
+print(a, end=', ')
+print(b, end=', ')
 
 while count < n:
     c = a + b
