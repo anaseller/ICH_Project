@@ -8,23 +8,20 @@
 
 n = int(input('Введите число N: '))
 
-count = 0
+count = 2
 a = 0
 b = 1
 
+print(a, b, end=', ')
+
 while count < n:
-    if count == 0:
-        print(a, end=', ')
-    elif count == 1:
-        print(b, end=', ')
+    c = a + b
+    if count == n - 1 :
+        print(c)
     else:
-        c = a + b
-        if count == n - 1 :
-            print(c)
-        else:
-            print(c, end=', ')
-        a = b
-        b = c
+        print(c, end=', ')
+    a = b
+    b = c
     count += 1
 
 
