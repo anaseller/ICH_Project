@@ -13,13 +13,13 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
 user_text = user_text.lower()
 
 i = 0
-teory = True
+is_contain = True
 
 while i < len(alphabet):
     if alphabet[i] not in user_text:
-        teory = False
+        is_contain = False
         break
     i += 1
 
-print('Строка является панграммой.' if teory else 'Строка не является панграммой.')
+print('Строка является панграммой.' if is_contain else 'Строка не является панграммой.')
 
