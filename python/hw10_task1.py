@@ -5,3 +5,12 @@
 # Пример вывода:
 # Введите строку: Hello, world!
 # Результат: Hll, wrld!
+
+
+text = input('Введите строку: ')
+vowels = 'AEIOUaeiouАЕЁИОУЫЭЮЯаеёиоуыэюя'
+
+for vowel in vowels:
+    text = text.replace(vowel, '')
+
+print('Результат:', text)
