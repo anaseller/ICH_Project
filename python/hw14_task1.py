@@ -7,11 +7,11 @@
 # Введите предложение: Программирование это интересно и полезно
 # Перевернутое предложение: полезно и интересно это Программирование
 
-sentence = input("Введите предложение: ")
+x = input("Введите предложение: ")
 
-words = sentence.split()
+words = x.split()
 reversed_words = words[::-1]
 
-reversed_sentence = ' '.join(reversed_words)
+reversed_x = ' '.join(reversed_words)
 
-print("Перевернутое предложение:", reversed_sentence)
+print("Перевернутое предложение:", reversed_x)
