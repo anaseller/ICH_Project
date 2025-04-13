@@ -8,7 +8,7 @@
 # Сумма и произведение чисел: (7, 12)
 
 def calculate_sum_and_product(a, b):
-    return (a + b, a * b)  
+    return (a + b, a * b)
 
 num1 = int(input("Введите первое число: "))
 num2 = int(input("Введите второе число: "))

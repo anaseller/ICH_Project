@@ -9,10 +9,17 @@
 # Максимальное значение: 9
 
 numbers_inp = input("Введите числа, разделённые запятой: ")
-numbers = list(map(int, numbers_inp.split(',')))
+
+numbers_str = numbers_inp.split(",")
+numbers = []
+for item in numbers_str:
+    numbers.append(int(item.strip()))
 
 def analyze_list(nums):
-    return sum(numbers), min(numbers), max(numbers)
+    total = sum(nums)
+    minimum = min(nums)
+    maximum = max(nums)
+    return total, minimum, maximum
 
 total, minimum, maximum = analyze_list(numbers)
 
