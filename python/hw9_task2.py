@@ -8,9 +8,10 @@
 # Количество согласных букв: 7
 
 user_text = input('Введите строку: ')
+user_text = user_text.lower()
 
-vowels = 'aeiouAEIOU'
-consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+vowels = 'aeiou'
+consonants = 'bcdfghjklmnpqrstvwxyz'
 
 i = 0
 
@@ -21,7 +22,7 @@ while i < len(user_text):
     x = user_text[i] # берем текущий символ
     if x in vowels:
         vow += 1
-    elif x in consonants:
+    if x in consonants:
         con += 1
     i +=1
 

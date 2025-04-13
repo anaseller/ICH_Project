@@ -16,13 +16,16 @@ print(a, end=', ')
 print(b, end=', ')
 
 while count < n:
-    c = a + b
+    # c = a + b
+    a, b = b, a + b
     if count == n - 1 :
-        print(c)
+        print(b) # was c
     else:
-        print(c, end=', ')
-    a = b
-    b = c
+        print(b, end=', ') # was c
+    # a = b
+    # b = c
     count += 1
 
-
+# (Только в задаче про числа Фибоначчи, удобнее использовать
+# a, b = b, a + b
+# - это позволяет сэкономить 3 строки кода и, следовательно, сделать код понятнее и читабельнее)
