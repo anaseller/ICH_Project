@@ -6,10 +6,10 @@
 # Введите число: 12345
 # Сумма цифр числа 12345 равна 15
 
-def sum_nums(n):
+def sum_digits(n):
     if n < 10:
         return n
-    return n % 10 + sum_nums(n // 10)
+    return n % 10 + sum_digits(n // 10)
 
 num = int(input('Введите число: '))
-print(f'Сумма цифр числа {num} равна {sum_nums(num)}')
+print(f'Сумма цифр числа {num} равна {sum_digits(num)}')
