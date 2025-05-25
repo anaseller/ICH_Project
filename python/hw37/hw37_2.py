@@ -18,7 +18,7 @@ with mysql.connector.connect(**dbconfig) as connection:
 
         print('Список пользователей:')
         for name in names:
-            print('-', name)
+            print(name)
 
         selected_name = input('Выберите имя пользователя: ')
 
@@ -33,8 +33,8 @@ with mysql.connector.connect(**dbconfig) as connection:
             cursor.execute(f'SELECT prod FROM Products WHERE pid IN ({format_strings})', tuple(product_ids))
             products = cursor.fetchall()
 
-            print('Покупки пользователя:', selected_name)
+            print('\nПокупки пользователя:', selected_name)
             for product in products:
-                print('-', product[0])
+                print(product[0])
         else:
             print('У пользователя нет покупок.')
