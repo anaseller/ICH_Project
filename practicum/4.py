@@ -7,3 +7,4 @@ if weekday:
     print('рабочий день')
 else:
     print('выходной')
+
