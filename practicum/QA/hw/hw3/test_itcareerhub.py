@@ -18,7 +18,7 @@ def test_elements(driver):
     wait = WebDriverWait(driver, 10)
 
     # Проверка логотипа
-    logo = driver.find_element(By.XPATH, '//img[@alt="itcareerhub logo"]')
+    logo = driver.find_element(By.XPATH, '//img[contains(@src, "Group_3793.svg")]')
     assert logo.is_displayed(), "Логотип не отображается"
 
     # Проверка ссылок
@@ -44,7 +44,7 @@ def test_elements(driver):
     assert lang_de.is_displayed(), 'Кнопка DE не отображается'
 
     # Кликнуть по иконке с телефонной трубкой
-    phone_icon = driver.find_element(By.XPATH, '//a[contains(@href, "#popup:callback")]')
+    phone_icon = driver.find_element(By.XPATH, '//img[contains(@src, "Group_3800.svg")]')
     phone_icon.click()
 
     # Проверка текста после клика
